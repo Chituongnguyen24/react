@@ -1,0 +1,74 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.delete-btn {
+  background-color: var(--delete-btn);
+  color: var(--button-text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: var(--delete-btn-hover);
+}
+
+/* Light Mode */
+.light {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --primary-color: #4a90e2;
+  --primary-color-hover: #357ab8;
+  --button-text-color: #fff;
+  --secondary-color: #e0e0e0;
+  --border-color: #ccc;
+  --delete-btn: #e74c3c;
+  --delete-btn-hover: #c0392b;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --primary-color: #3498db;
+  --primary-color-hover: #2980b9;
+  --button-text-color: #fff;
+  --secondary-color: #34495e;
+  --border-color: #7f8c8d;
+  --delete-btn: #e74c3c;
+  --delete-btn-hover: #c0392b;
+}
