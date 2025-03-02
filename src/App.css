@@ -1,0 +1,108 @@
+body {
+  background: white; /* Nền trắng */
+  color: black; /* Chữ đen */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: black; /* Chữ đen */
+}
+
+/* Form nhập sinh viên */
+.student-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.student-form input {
+  padding: 8px;
+  flex: 1;
+  min-width: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white; /* Nền trắng */
+  color: black; /* Chữ đen */
+}
+
+button {
+  padding: 8px 15px;
+  background: rgb(3, 109, 3); /* Nền trắng */
+  color: rgb(255, 255, 255); /* Chữ đen */
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+/* Danh sách sinh viên */
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+/* Ô điểm theo hàng ngang */
+.scores {
+  display: flex;
+  gap: 15px;
+  color: black; /* Chữ đen */
+}
+
+/* Input điểm */
+.scores-container {
+  display: flex;
+  gap: 5px;
+}
+
+.scores-container input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background: white; /* Nền trắng */
+  color: black; /* Chữ đen */
+}
+
+/* Nút sửa & xóa */
+.student-item button {
+  background: rgb(24, 174, 179); /* Nền trắng */
+  color: rgb(255, 255, 255); /* Chữ đen */
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.student-item button:hover {
+  background: #ddd;
+}
